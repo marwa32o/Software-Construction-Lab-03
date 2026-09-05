@@ -2,4 +2,5 @@ BankAccount.class
 TemperatureConverter.class
 SimpleTimer.class
 StringUtil.class
+ShoppingCart.class
 com\university\lab\lab3\Lab3.class
