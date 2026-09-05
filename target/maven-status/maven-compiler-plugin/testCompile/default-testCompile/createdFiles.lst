@@ -1,6 +1,7 @@
-StringUtilTest.class
 BankAccountTest.class
-ShoppingCartTest.class
 Calculator1Test.class
+StringUtilTest.class
+ShoppingCartTest.class
 SimpleTimerTest.class
+BankAccountHW2Test.class
 TemperatureConverterTest.class
