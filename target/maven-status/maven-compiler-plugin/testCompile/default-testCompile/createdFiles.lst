@@ -1,5 +1,6 @@
 StringUtilTest.class
 BankAccountTest.class
 ShoppingCartTest.class
+Calculator1Test.class
 SimpleTimerTest.class
 TemperatureConverterTest.class
