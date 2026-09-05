@@ -38,3 +38,9 @@ This lab introduces unit testing in Java using the JUnit 5 framework within NetB
   * Tracks elapsed time via `start()`, `stop()`, `getElapsedTime()`, and `isRunning()`.
 * **Testing:** `SimpleTimerTest.java`
   * Asserts state toggles (`running` status) and verifies precise time recording using controlled thread execution delays.
+
+### Task 5: Shopping Cart (Mini Case Study)
+* **Implementation:** `ShoppingCart.java`
+  * Implements `addItem()`, `removeItem()`, `getItemCount()`, and `clear()` methods using a generic `List<String>` to simulate business rules.
+* **Testing:** `ShoppingCartTest.java`
+  * Tests adding items, removing items, clearing the cart, and verifying that removing non-existent items executes safely without throwing exceptions.
