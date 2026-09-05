@@ -8,7 +8,7 @@
 
 ## Lab Objective
 
-This lab introduces unit testing in Java using the JUnit framework within NetBeans IDE. The objective is to build modular Java classes and test their core functionalities using comprehensive unit test suites.
+This lab introduces unit testing in Java using the JUnit 5 framework within NetBeans IDE. The objective is to construct modular, robust Java utility classes and verify their functionality, edge cases, and exception handling using comprehensive test suites.
 
 ---
 
@@ -18,19 +18,23 @@ This lab introduces unit testing in Java using the JUnit framework within NetBea
 * **Implementation:** `TemperatureConverter.java`
   * Implements `celsiusToFahrenheit`, `fahrenheitToCelsius`, and `celsiusToKelvin` conversion formulas.
 * **Testing:** `TemperatureConverterTest.java`
-  * Verifies known temperature pairs (0°C → 32°F and 100°C → 212°F).
-  * Checks round-trip calculations and Kelvin conversions.
+  * Verifies known temperature pairs (0°C → 32°F and 100°C → 212°F), round-trip consistency, and Kelvin conversions.
 
 ### Task 2: Bank Account Management
 * **Implementation:** `BankAccount.java`
-  * Manages account balances with `deposit()`, `withdraw()`, and `getBalance()` methods.
-  * Throws `IllegalArgumentException` for invalid transaction amounts or insufficient funds.
+  * Manages account balances using `deposit()`, `withdraw()`, and `getBalance()`.
+  * Throws `IllegalArgumentException` for non-positive transaction amounts or overdraft attempts.
 * **Testing:** `BankAccountTest.java`
-  * Validates successful deposits and withdrawals.
-  * Tests edge cases like negative deposits and overdraft attempts using `assertThrows`.
+  * Validates successful deposits/withdrawals and asserts exception handling using `assertThrows`.
 
 ### Task 3: String Utility (Palindrome Checker)
 * **Implementation:** `StringUtil.java`
-  * Implements `isPalindrome()` to check for palindromic strings while ignoring spaces, punctuation, and case sensitivity.
+  * Implements `isPalindrome()` to check string equality while ignoring non-alphanumeric characters and case sensitivity.
 * **Testing:** `StringUtilTest.java`
-  * Verifies simple palindromes, phrase palindromes, non-palindromes, and `null` inputs.
+  * Verifies simple words, multi-word phrases, non-palindromes, and `null` values.
+
+### Task 4: Simple Timer Utility
+* **Implementation:** `SimpleTimer.java`
+  * Tracks elapsed time via `start()`, `stop()`, `getElapsedTime()`, and `isRunning()`.
+* **Testing:** `SimpleTimerTest.java`
+  * Asserts state toggles (`running` status) and verifies precise time recording using controlled thread execution delays.
