@@ -28,3 +28,9 @@ This lab introduces unit testing in Java using the JUnit framework within NetBea
 * **Testing:** `BankAccountTest.java`
   * Validates successful deposits and withdrawals.
   * Tests edge cases like negative deposits and overdraft attempts using `assertThrows`.
+
+### Task 3: String Utility (Palindrome Checker)
+* **Implementation:** `StringUtil.java`
+  * Implements `isPalindrome()` to check for palindromic strings while ignoring spaces, punctuation, and case sensitivity.
+* **Testing:** `StringUtilTest.java`
+  * Verifies simple palindromes, phrase palindromes, non-palindromes, and `null` inputs.
