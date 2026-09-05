@@ -58,7 +58,7 @@ This lab introduces unit testing in Java using the JUnit 5 framework within NetB
 - **Testing:** `Calculator1Test.java`
   * Uses `@BeforeEach`/`@AfterEach` to create and reset the calculator instance before/after every test.
   * Covers normal, boundary (zero exponent, a < b), and exceptional (modulus by zero) cases.
-- **Coverage:** Code-coverage report generated via NetBeans Coverage tool (see PDF report for screenshot and percentage).
+  
 
 ### Homework 2: Account Validation
 
