@@ -1,37 +1,36 @@
-# Lab Task 03 - Task 1: Temperature Converter
+# Lab Task 03 - Software Construction
+
 **Course:** Software Construction (5th Semester)  
 **Institution:** University of Engineering and Technology, Abbottabad Campus  
-**Date:** September 01, 2026  
+**Date:** September 05, 2026  
 
 ---
 
 ## Lab Objective
-This lab introduces unit testing in Java using the JUnit framework within NetBeans IDE. The objective of Task 1 is to test the correctness of temperature conversion formulas between Celsius, Fahrenheit, and Kelvin.
+
+This lab introduces unit testing in Java using the JUnit framework within NetBeans IDE. The objective is to build modular Java classes and test their core functionalities using comprehensive unit test suites.
 
 ---
 
-## Task Completed
+## Tasks Completed
 
 ### Task 1: Temperature Converter
 * **Implementation:** `TemperatureConverter.java`
   * Implements `celsiusToFahrenheit`, `fahrenheitToCelsius`, and `celsiusToKelvin` conversion formulas.
 * **Testing:** `TemperatureConverterTest.java`
-  * Verifies known temperature pairs ($0^\circ\text{C} \rightarrow 32^\circ\text{F}$ and $100^\circ\text{C} \rightarrow 212^\circ\text{F}$).
-  * Checks round-trip calculations (`fahrenheitToCelsius(celsiusToFahrenheit(x)) ≈ x`).
-  * Asserts approximate equality using `assertEquals(expected, actual, 0.01)`.
+  * Verifies known temperature pairs (0°C → 32°F and 100°C → 212°F).
+  * Checks round-trip calculations and Kelvin conversions.
 
----
+### Task 2: Bank Account Management
+* **Implementation:** `BankAccount.java`
+  * Manages account balances with `deposit()`, `withdraw()`, and `getBalance()` methods.
+  * Throws `IllegalArgumentException` for invalid transaction amounts or insufficient funds.
+* **Testing:** `BankAccountTest.java`
+  * Validates successful deposits and withdrawals.
+  * Tests edge cases like negative deposits and overdraft attempts using `assertThrows`.
 
-## How to Run the Code & Tests
-
-### Prerequisites
-* Java Development Kit (JDK 11 or higher)
-* NetBeans IDE 
-* JUnit 5 Library
-
-### Execution Steps
-1. Open **NetBeans IDE**.
-2. Click **File -> Open Project** and select the `lab3` folder.
-3. Open `TemperatureConverter.java` in the editor.
-4. To run automated JUnit tests, right-click the project (or `TemperatureConverterTest.java`) and select **Test** (or press `Alt + F6`).
-5. Verify that all unit tests pass with a 100% green execution status.
+### Task 3: String Utility (Palindrome Checker)
+* **Implementation:** `StringUtil.java`
+  * Implements `isPalindrome()` to check for palindromic strings while ignoring spaces, punctuation, and case sensitivity.
+* **Testing:** `StringUtilTest.java`
+  * Verifies simple palindromes, phrase palindromes, non-palindromes, and `null` inputs.
