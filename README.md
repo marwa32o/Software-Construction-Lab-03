@@ -46,33 +46,5 @@ This lab introduces unit testing in Java using the JUnit 5 framework within NetB
 * **Testing:** `ShoppingCartTest.java`
   * Tests adding items, removing items, clearing the cart, and verifying that removing non-existent items executes safely without throwing exceptions.
 
----
 
-## Homework Tasks
 
-### Homework 1: Enhanced Calculator
-
-- **Implementation:** `Calculator1.java`
-  * Extends the in-lab calculator with `power(int base, int exp)` and `modulus(int a, int b)` methods.
-  * `modulus()` throws `IllegalArgumentException` when dividing by zero.
-- **Testing:** `Calculator1Test.java`
-  * Uses `@BeforeEach`/`@AfterEach` to create and reset the calculator instance before/after every test.
-  * Covers normal, boundary (zero exponent, a < b), and exceptional (modulus by zero) cases.
-  
-
-### Homework 2: Account Validation
-
-- **Implementation:** `BankAccountHW2.java`
-  * Implements `deposit()`, `withdraw()`, `getBalance()`, and `isActive()`.
-  * Disallows negative deposits and withdrawals exceeding the current balance.
-  * Marks the account inactive if the balance drops below 100 after a withdrawal.
-- **Testing:** `BankAccountHW2Test.java`
-  * 7 test cases using `assertThrows`, `assertTrue`, `assertFalse`: valid deposit, negative deposit, overdraft, inactivity trigger, staying active, zero withdrawal, and withdrawal equal to balance.
-
-### Homework 3: String Utility Testing
-
-- **Implementation:** `StringAnalyzer.java`
-  * Implements `isPalindrome()`, `countVowels()`, and `isAnagram()`.
-  * Null and empty inputs return `false`/`0` rather than throwing.
-- **Testing:** `StringAnalyzerTest.java`
-  * 13 test cases with `@DisplayName` annotations, covering case-insensitivity, empty/null inputs, and various vowel-count scenarios.
