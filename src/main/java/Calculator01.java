@@ -7,8 +7,8 @@
  *
  * @author PC
  */
-public class Calculatorr1 {
-   public int add(int a, int b) {
+public class Calculator01 {
+  public int add(int a, int b) {
         return a + b;
     }
 

@@ -3,13 +3,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Calculator1Test {
+public class Calculator01Test {
 
-    private Calculator1 calculator;
+    private Calculator01 calculator;
 
     @BeforeEach
     void setUp() {
-        calculator = new Calculator1();
+        calculator = new Calculator01();
     }
 
     @AfterEach
