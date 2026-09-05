@@ -3,6 +3,7 @@
 **Course:** Software Construction (5th Semester)  
 **Institution:** University of Engineering and Technology, Abbottabad Campus  
 **Date:** September 05, 2026  
+**Repository:** https://github.com/marwa32o/Software-Construction-Lab-03
 
 ---
 
@@ -44,3 +45,15 @@ This lab introduces unit testing in Java using the JUnit 5 framework within NetB
   * Implements `addItem()`, `removeItem()`, `getItemCount()`, and `clear()` methods using a generic `List<String>` to simulate business rules.
 * **Testing:** `ShoppingCartTest.java`
   * Tests adding items, removing items, clearing the cart, and verifying that removing non-existent items executes safely without throwing exceptions.
+
+---
+
+## Homework Completed
+
+### Homework 1: Enhanced Calculator
+* **Implementation:** `Calculator1.java`
+  * Implements basic operations (`add`, `subtract`, `multiply`, `divide`) alongside advanced operations (`power`, `modulus`).
+  * Throws `IllegalArgumentException("Cannot divide by zero.")` for division or modulus operations with a zero divisor.
+* **Testing:** `Calculator1Test.java`
+  * Employs `@BeforeEach` and `@AfterEach` lifecycle annotations to ensure clean state initialization and teardown.
+  * Achieves 100% test pass rate across positive, negative, zero-exponent, boundary, and exception conditions.
